@@ -1,0 +1,11 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+/dataSources/
+dataSources.local.xml
+dataSources.xml
+hotswap_agent.xml
+misc.xml
+sqldialects.xml

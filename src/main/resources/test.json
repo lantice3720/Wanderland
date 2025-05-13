@@ -1,0 +1,24 @@
+{
+	"id": "item_id",
+	"material": "MATERIAL_NAME",
+	"material_override": [
+		{
+			"condition": { "state": "item_state", "operator": "==", "value": "0" },
+			"material": "MATERIAL_NAME"
+		},
+		{
+			"condition": [
+				{ "state": "item_state", "operator": "==", "value": "1" },
+				{ "state": "another_state", "operator": ">=", "value": "1" }
+			],
+			"material": "ANOTHER_MATERIAL_NAME"
+		}
+	],
+	"component": [
+		{
+			"condition": { "state": "item_state", "operator": "==", "value": "0" },
+			"component": "COMPONENT_NAME",
+			"value": "COMPONENT_VALUE"
+		}
+	]
+}
