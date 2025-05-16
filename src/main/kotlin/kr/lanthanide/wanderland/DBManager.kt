@@ -10,7 +10,7 @@ object DBManager {
     init {
         val config = HikariConfig().apply {
             jdbcUrl = CONFIG.jdbcUrl
-            username = CONFIG.dbUserName
+            username = CONFIG.dbUsername
             password = CONFIG.dbPassword
             driverClassName = "org.postgresql.Driver"
             maximumPoolSize = 10

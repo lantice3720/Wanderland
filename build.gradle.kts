@@ -24,6 +24,7 @@ dependencies {
     implementation("com.zaxxer:HikariCP:6.3.0")
 
     implementation("com.charleskorn.kaml:kaml:0.77.1")
+    implementation("org.joml:joml:1.10.8")
     implementation("de.articdive:jnoise-pipeline:4.1.0")
 }
 

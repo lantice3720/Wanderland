@@ -3,7 +3,7 @@ package kr.lanthanide.wanderland.command
 import net.minestom.server.MinecraftServer
 import net.minestom.server.command.builder.Command
 
-class CommandStop: Command("stop") {
+class Stop: Command("stop") {
     init {
         setDefaultExecutor { sender, _ ->
             sender.sendMessage("Stopping server...")

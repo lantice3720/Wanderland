@@ -28,7 +28,7 @@ data class WanderlandConfigYaml(
     // path to favicon
     val favicon: String = "favicon.png",
     val jdbcUrl: String = "jdbc:postgresql://localhost:5432/wanderland",
-    val dbUserName: String = "postgres",
+    val dbUsername: String = "postgres",
     val dbPassword: String = "postgres",
     val dbMainScheme: String = "game_data",
     // uuid of the main world compositeInstance stored on DB.

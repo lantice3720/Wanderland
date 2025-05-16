@@ -1,6 +1,5 @@
 package kr.lanthanide.wanderland.command
 
-import kr.lanthanide.wanderland.item.ItemFactory
 import net.minestom.server.command.CommandSender
 import net.minestom.server.command.builder.Command
 import net.minestom.server.command.builder.CommandContext
@@ -8,7 +7,7 @@ import net.minestom.server.command.builder.CommandExecutor
 import net.minestom.server.command.builder.arguments.ArgumentType
 
 
-class CommandGive: Command("give") {
+class Give: Command("give") {
     init {
         defaultExecutor = CommandExecutor { sender: CommandSender, context: CommandContext ->
             sender.sendMessage("usage: /give <targetPlayer> <itemstack>|<custom item id>")
@@ -50,13 +49,13 @@ class CommandGive: Command("give") {
                 return@CommandExecutor
             }
 
-            val item = ItemFactory.fromId(customItemId)
-            if (item == null) {
-                sender.sendMessage("Could not find custom item!")
-                return@CommandExecutor
-            }
+//            val item = ItemFactory.fromId(customItemId)
+//            if (item == null) {
+//                sender.sendMessage("Could not find custom item!")
+//                return@CommandExecutor
+//            }
 
-            target.inventory.addItemStack(item)
+//            target.inventory.addItemStack(item)
 
         }, targetArg, customItemIdArg)
     }
